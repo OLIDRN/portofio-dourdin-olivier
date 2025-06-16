@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { projects } from '../data/projects';
 import './ProjectsGallery.css';
 
@@ -35,12 +35,12 @@ const ProjectsGallery = () => {
             <span className="gallery-card-title">{project.title}</span>
             <span className="gallery-card-year">{project.year}</span>
             {project.award && <span className="gallery-card-award">award</span>}
-            <a className="gallery-card-view-btn" href={project.link} target="_blank" rel="noopener noreferrer">
+            <Link className="gallery-card-view-btn" to={`/projets/${project.slug}`}>
               <span className="circle-text">Voir</span>
               <svg className="circle-svg" width="70" height="70" viewBox="0 0 70 70">
                 <circle cx="35" cy="35" r="32" fill="none" stroke="#7c3aed" strokeWidth="2" />
               </svg>
-            </a>
+            </Link>
           </motion.div>
         ))}
       </div>
