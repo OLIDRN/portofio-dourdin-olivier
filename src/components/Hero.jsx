@@ -97,7 +97,7 @@ const Hero = () => {
           <h1 className="hero-title">
             <span>Olivier Dourdin</span>
           </h1>
-          <h2 className="hero-subtitle">Développeur Back-End</h2>
+          <h2 className="hero-subtitle">Développeur full-stack</h2>
           <p className="hero-desc">
             Bienvenue sur mon portfolio !
             Vous pouvez découvrir mes supers projets ou en apprendre un peu plus sur moi.

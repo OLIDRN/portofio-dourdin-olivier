@@ -37,7 +37,7 @@ const Footer = () => {
         ))}
       </div>
       <div className="footer-copy">
-        © {new Date().getFullYear()} – Olivier Dourdin – Développeur web full-stack
+        © {new Date().getFullYear()} – Olivier Dourdin – Développeur full-stack
       </div>
     </footer>
   );
