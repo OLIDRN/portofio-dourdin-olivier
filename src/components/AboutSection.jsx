@@ -2,26 +2,26 @@ import { motion } from 'framer-motion';
 import './AboutSection.css';
 
 const infos = [
-  { icon: '/src/assets/svg/location.svg', label: 'La Couture, Hauts-de-France' },
-  { icon: '/src/assets/svg/briefcase.svg', label: 'Alternance recherchée' },
-  { icon: '/src/assets/svg/graduation.svg', label: 'BUT Informatique' },
+  { icon: '/public/svg/location.svg', label: 'La Couture, Hauts-de-France' },
+  { icon: '/public/svg/briefcase.svg', label: 'Alternance recherchée' },
+  { icon: '/public/svg/graduation.svg', label: 'BUT Informatique' },
 ];
 
 const socials = [
   {
     name: 'GitHub',
     url: 'https://github.com/olivierdourdin',
-    icon: '/src/assets/svg/github.svg',
+    icon: '/public/svg/github.svg',
   },
   {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/olivierdourdin/',
-    icon: '/src/assets/svg/linkedin.svg',
+    icon: '/public/svg/linkedin.svg',
   },
   {
     name: 'Email',
     url: 'mailto:olivierdourdin148@gmail.com',
-    icon: '/src/assets/svg/mail.svg',
+    icon: '/public/svg/mail.svg',
   },
 ];
 

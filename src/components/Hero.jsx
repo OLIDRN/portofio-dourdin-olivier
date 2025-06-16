@@ -84,7 +84,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <div className="hero-img-wrapper">
-            <img src="/src/assets/olivier.jpg" alt="Olivier" className="hero-img" />
+            <img src="/public/olivier.jpg" alt="Olivier" className="hero-img" />
             <div className="hero-img-gradient" />
           </div>
         </motion.div>
