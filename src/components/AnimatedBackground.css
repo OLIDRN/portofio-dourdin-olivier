@@ -1,0 +1,25 @@
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(270deg, #6a82fb, #fc5c7d, #232526, #6a82fb);
+  background-size: 400% 400%;
+  animation: gradientMove 18s ease-in-out infinite;
+  opacity: 0.85;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} 
