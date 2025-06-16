@@ -84,7 +84,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <div className="hero-img-wrapper">
-            <img src="/public/olivier.jpg" alt="Olivier" className="hero-img" />
+            <img src="/olivier.jpg" alt="Olivier" className="hero-img" />
             <div className="hero-img-gradient" />
           </div>
         </motion.div>
@@ -99,7 +99,8 @@ const Hero = () => {
           </h1>
           <h2 className="hero-subtitle">Développeur Back-End</h2>
           <p className="hero-desc">
-            Passionné par le développement web, j'aime créer des expériences numériques performantes, immersives et élégantes.
+            Bienvenue sur mon portfolio !
+            Vous pouvez découvrir mes supers projets ou en apprendre un peu plus sur moi.
           </p>
           <a href="#projects" className="hero-btn">Voir mes projets</a>
         </motion.div>

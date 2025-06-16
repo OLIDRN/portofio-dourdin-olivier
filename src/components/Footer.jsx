@@ -4,17 +4,17 @@ const socials = [
   {
     name: 'GitHub',
     url: 'https://github.com/olivierdourdin',
-    icon: '/public/svg/github.svg',
+    icon: '/svg/github.svg',
   },
   {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/olivierdourdin/',
-    icon: '/public/svg/linkedin.svg',
+    icon: '/svg/linkedin.svg',
   },
   {
     name: 'Email',
     url: 'mailto:olivierdourdin148@gmail.com',
-    icon: '/public/svg/mail.svg',
+    icon: '/svg/mail.svg',
   },
 ];
 

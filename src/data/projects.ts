@@ -19,12 +19,12 @@ export const projects: Project[] = [
     slug: "shot-time",
     type: "APPLICATION MOBILE",
     year: 2025,
-    image: "/public/images/shottime.png",
+    image: "/images/shottime.png",
     images: [
-      "/public/images/shottime/home.png",
-      "/public/images/shottime/create_game.png",
-      "/public/images/shottime/lobby.png",
-      "/public/images/shottime/choice_game.png"
+      "/images/shottime/home.png",
+      "/images/shottime/create_game.png",
+      "/images/shottime/lobby.png",
+      "/images/shottime/choice_game.png"
     ],
     description: `ShotTime est une application mobile immersive pour animer vos soirées entre amis avec des jeux originaux et interactifs. Pensée pour créer des souvenirs mémorables, elle propose une expérience fluide, moderne et fun, avec une interface inspirée des meilleurs designs Figma.\n\n- Framework : React Native\n- Tooling : Expo\n- Langage : TypeScript\n- Navigation : expo-router (app/ folder-based routing)\n- UI Design : Figma Pro\n\nShotTime permet de lancer des jeux de soirée variés, de suivre les scores, et d'ajouter une touche de fun grâce à des animations et effets immersifs.`,
     technologies: [
