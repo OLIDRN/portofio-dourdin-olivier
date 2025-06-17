@@ -1,6 +1,6 @@
 # Portfolio – Olivier Dourdin
 
-Bienvenue sur mon portfolio immersif de développeur web !
+Bienvenue sur mon portfolio !
 
 Ce projet met en avant mes réalisations, mon parcours et mes compétences à travers une expérience moderne, fluide et inspirante.
 
@@ -64,7 +64,7 @@ src/
 
 - [Olivier Dourdin](https://www.linkedin.com/in/olivier-dourdin-3a58a6268/)
 - [GitHub](https://github.com/OLIDRN)
-- -[Portfolio](https://portofio-dourdin-olivier.vercel.app)
+- [Portfolio](https://portofio-dourdin-olivier.vercel.app)
 
 ---
 
