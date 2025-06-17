@@ -12,7 +12,7 @@ Ce projet met en avant mes réalisations, mon parcours et mes compétences à tr
 - **Design premium** (fond animé, animations Framer Motion, navbar glassmorphism, etc.)
 - **Section projets** immersive (split hero, page détail façon case study)
 - **Responsive** et optimisé pour tous supports
-- **Déploiement facile** sur Vercel ou Netlify
+- **Déploiement facile** sur Vercel
 
 ---
 
@@ -46,18 +46,6 @@ Ce projet met en avant mes réalisations, mon parcours et mes compétences à tr
 
 ---
 
-## 🌍 Déploiement gratuit (Vercel recommandé)
-
-1. **Push ton code sur GitHub**
-2. Va sur [vercel.com](https://vercel.com/), connecte-toi avec GitHub
-3. Clique sur "New Project", sélectionne ton repo
-4. Laisse les options par défaut (Vite est détecté automatiquement)
-5. Clique sur "Deploy" : ton portfolio est en ligne !
-
-> Tu peux aussi utiliser [Netlify](https://www.netlify.com/) ou [Render](https://render.com/)
-
----
-
 ## 📁 Structure du projet
 
 ```
@@ -76,6 +64,7 @@ src/
 
 - [Olivier Dourdin](https://www.linkedin.com/in/olivier-dourdin-3a58a6268/)
 - [GitHub](https://github.com/OLIDRN)
+- -[Portfolio](https://portofio-dourdin-olivier.vercel.app)
 
 ---
 
