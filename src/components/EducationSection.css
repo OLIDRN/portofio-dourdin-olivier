@@ -86,28 +86,115 @@
   margin-top: 0.2rem;
 }
 
-@media (max-width: 700px) {
-  .edu-section {
-    padding: 2.2rem 0 1.2rem 0;
-  }
-  .edu-title {
-    font-size: 1.2rem;
-    margin-bottom: 1.2rem;
-  }
+@media (max-width: 1200px) {
   .edu-timeline {
-    gap: 1.2rem;
-    padding: 0 0.2rem;
+    max-width: 95vw;
+    padding: 0 2rem;
   }
+  
+  .edu-title {
+    font-size: 1.9rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .edu-section {
+    padding: 4rem 0 2rem 0;
+  }
+  
+  .edu-title {
+    font-size: 1.7rem;
+    margin-bottom: 2.2rem;
+  }
+  
+  .edu-timeline {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
   .edu-card {
-    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    padding: 2rem 1.5rem;
   }
+  
   .edu-degree {
+    font-size: 1.1rem;
+  }
+  
+  .edu-school {
     font-size: 1rem;
   }
+  
+  .edu-meta {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .edu-details {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .edu-section {
+    padding: 3rem 0 1.5rem 0;
+  }
+  .edu-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+  }
+  .edu-timeline {
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+  .edu-card {
+    padding: 1.5rem 1.2rem;
+  }
+  .edu-degree {
+    font-size: 1.05rem;
+  }
   .edu-school {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
   }
   .edu-details {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu-section {
+    padding: 2.5rem 0 1rem 0;
+  }
+  
+  .edu-timeline {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+  
+  .edu-card {
+    padding: 1rem 0.8rem;
+  }
+  
+  .edu-header {
+    gap: 0.1rem;
+  }
+  
+  .edu-degree {
+    font-size: 0.95rem;
+  }
+  
+  .edu-school {
+    font-size: 0.88rem;
+  }
+  
+  .edu-meta {
+    font-size: 0.9rem;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .edu-details {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
   }
 } 

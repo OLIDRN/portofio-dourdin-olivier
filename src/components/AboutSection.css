@@ -151,12 +151,55 @@
   filter: grayscale(0.2) brightness(1.1);
 }
 
+@media (max-width: 1200px) {
+  .about-content {
+    max-width: 95vw;
+    gap: 2.5rem;
+    padding: 0 2rem;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+  }
+  
+  .about-btn {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
 @media (max-width: 900px) {
+  .about-section {
+    padding: 5rem 0 3rem 0;
+  }
+  
+  .about-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+  
   .about-content {
     flex-direction: column;
     gap: 2.2rem;
     align-items: center;
+    padding: 0 2rem;
   }
+  
+  .about-text-block {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-text {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .about-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
   .about-socials-block {
     flex: unset;
     min-width: 0;
@@ -166,6 +209,60 @@
   .about-socials {
     flex-direction: row;
     gap: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-section {
+    padding: 4rem 0 2.5rem 0;
+  }
+  
+  .about-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-content {
+    padding: 0 1.5rem;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-infos {
+    gap: 0.8rem 1.2rem;
+    justify-content: center;
+  }
+  
+  .about-info-tag {
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .about-info-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .about-actions {
+    gap: 1rem;
+  }
+  
+  .about-btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .about-social-link {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .about-social-icon {
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -195,5 +292,29 @@
   .about-social-icon {
     width: 18px;
     height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 0 1rem;
+  }
+  
+  .about-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .about-btn {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .about-infos {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
   }
 } 

@@ -68,22 +68,6 @@ const AboutSection = () => {
             </a>
           </div>
         </div>
-        <div className="about-socials-block">
-          <div className="about-socials">
-            {socials.map((s) => (
-              <a
-                key={s.name}
-                href={s.url}
-                className="about-social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                title={s.name}
-              >
-                <img src={s.icon} alt={s.name} className="about-social-icon" />
-              </a>
-            ))}
-          </div>
-        </div>
       </motion.div>
     </section>
   );

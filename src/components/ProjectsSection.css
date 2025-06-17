@@ -27,12 +27,12 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 2.5rem 2.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem 2rem;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   justify-items: center;
-  align-items: stretch;
+  align-items: start;
   box-sizing: border-box;
   padding: 0 2rem;
   will-change: transform, opacity;
@@ -223,5 +223,103 @@
   .projects-main-title {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+  }
+}
+
+/* Améliorations responsive */
+@media (max-width: 1200px) {
+  .projects-section {
+    padding: 5rem 0 3rem 0;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem 1.5rem;
+    max-width: 1000px;
+  }
+  
+  .projects-main-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-section {
+    padding: 4rem 0 2.5rem 0;
+  }
+  
+  .projects-main-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 0 1.5rem;
+    max-width: 400px;
+  }
+  
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .see-more-projects-btn {
+    padding: 1rem 2.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-section {
+    padding: 3.5rem 0 2rem 0;
+  }
+  
+  .projects-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projects-main-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: none;
+  }
+  
+  .project-card {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .see-more-projects-btn {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 3rem 0 1.5rem 0;
+  }
+  
+  .projects-grid {
+    gap: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  
+  .project-card-content {
+    padding: 1rem;
+  }
+  
+  .see-more-projects-wrapper {
+    margin: 2.5rem 0 1rem 0;
   }
 } 

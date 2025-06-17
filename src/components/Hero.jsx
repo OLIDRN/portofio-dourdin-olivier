@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
@@ -9,6 +10,7 @@ const Hero = () => {
   const rotateX = useTransform(y, [0, 1], [8, -8]);
   const rotateY = useTransform(x, [0, 1], [-8, 8]);
   const [isHover, setIsHover] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleMouseMove = (e) => {
     if (!isHover) return;
@@ -29,6 +31,14 @@ const Hero = () => {
     setIsHover(false);
     x.set(0.5);
     y.set(0.5);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -55,12 +65,46 @@ const Hero = () => {
           </span>
           Olivier Dourdin
         </span>
-        <ul className="hero-navbar-links">
-          <li><a href="#projects"><span className="nav-icon">📁</span> Projets</a></li>
-          <li><a href="#about"><span className="nav-icon">👤</span> À propos</a></li>
-          <li><a href="#contact"><span className="nav-icon">✉️</span> Contact</a></li>
+
+        {/* Menu desktop */}
+        <ul className="hero-navbar-links desktop-menu">
+          <li><Link to="/projets"><span className="nav-icon">📁</span> Projets</Link></li>
+          <li><Link to="/about"><span className="nav-icon">👤</span> À propos</Link></li>
         </ul>
+
+        {/* Bouton burger mobile */}
+        <button 
+          className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`}
+          onClick={toggleMobileMenu}
+          aria-label="Menu"
+        >
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+        </button>
+
+        {/* Menu mobile */}
+        <motion.div 
+          className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ 
+            opacity: isMobileMenuOpen ? 1 : 0,
+            y: isMobileMenuOpen ? 0 : -20
+          }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
+        >
+          <ul className="mobile-menu-links">
+            <li><Link to="/projets" onClick={closeMobileMenu}><span className="nav-icon">📁</span> Projets</Link></li>
+            <li><Link to="/about" onClick={closeMobileMenu}><span className="nav-icon">👤</span> À propos</Link></li>
+          </ul>
+        </motion.div>
       </motion.nav>
+
+      {/* Overlay pour fermer le menu en cliquant à côté */}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu-overlay" onClick={closeMobileMenu}></div>
+      )}
+
       <div className="hero-halo-bg" />
       <motion.div
         className="hero-center-card"
@@ -102,7 +146,7 @@ const Hero = () => {
             Bienvenue sur mon portfolio !
             Vous pouvez découvrir mes supers projets ou en apprendre un peu plus sur moi.
           </p>
-          <a href="#projects" className="hero-btn">Voir mes projets</a>
+          <Link to="/projets" className="hero-btn">Voir mes projets</Link>
         </motion.div>
       </motion.div>
       <div className="scroll-indicator">

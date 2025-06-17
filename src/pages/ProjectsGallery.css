@@ -193,50 +193,185 @@
   display: block;
 }
 
+@media (max-width: 1200px) {
+  .gallery-grid {
+    max-width: 95vw;
+    padding: 0 1.5rem;
+    gap: 3rem 2rem;
+  }
+  
+  .gallery-card {
+    max-width: 480px;
+  }
+  
+  .gallery-title {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
 @media (max-width: 900px) {
+  .gallery-wrapper {
+    padding: 5rem 0 3rem 0;
+  }
+  
+  .gallery-title {
+    font-size: 2.1rem;
+    margin-bottom: 2.5rem;
+  }
+  
   .gallery-grid {
     grid-template-columns: 1fr;
-    gap: 2.2rem 0;
-    padding: 0 0.5rem;
+    gap: 2.5rem;
+    padding: 0 2rem;
   }
+  
+  .gallery-card {
+    max-width: 100%;
+    min-height: 300px;
+  }
+  
   .gallery-card-img {
-    height: 220px;
+    height: 300px;
   }
+  
   .gallery-card-title {
-    font-size: 1.1rem;
-    padding: 0.4rem 0.8rem;
-    left: 12px;
-    bottom: 10px;
+    font-size: 1.25rem;
+    padding: 0.4rem 1rem;
   }
-  .gallery-card-year {
-    font-size: 0.95rem;
-    right: 8px;
-    bottom: 14px;
-  }
+  
   .gallery-card-type {
-    font-size: 0.95rem;
-    left: 14px;
-    top: 10px;
+    font-size: 1rem;
+    top: 15px;
+    left: 24px;
   }
-  .gallery-card-award {
-    top: 18px;
-    right: 18px;
-    font-size: 0.9rem;
-    padding: 0.3rem 0.7rem;
+  
+  .gallery-card-year {
+    font-size: 1rem;
+    right: 15px;
+    bottom: 20px;
   }
-  .gallery-card-view-btn, .circle-svg, .circle-text {
-    width: 48px;
-    height: 48px;
-    font-size: 0.8rem;
-    left: 14px;
-    bottom: 54px;
+  
+  .gallery-card-view-btn {
+    left: 30px;
+    bottom: 80px;
   }
 }
 
 @media (max-width: 700px) {
+  .gallery-wrapper {
+    padding: 4rem 0 2.5rem 0;
+  }
+  
+  .gallery-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .gallery-grid {
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+  
+  .gallery-card {
+    min-height: 280px;
+  }
+  
+  .gallery-card-img {
+    height: 280px;
+  }
+  
+  .gallery-card-title {
+    font-size: 1.15rem;
+    left: 20px;
+    bottom: 15px;
+  }
+  
+  .gallery-card-type {
+    font-size: 0.95rem;
+    top: 12px;
+    left: 20px;
+  }
+  
+  .gallery-card-award {
+    top: 30px;
+    right: 30px;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.9rem;
+  }
+  
+  .gallery-card-view-btn, .circle-svg, .circle-text {
+    width: 60px;
+    height: 60px;
+    font-size: 0.9rem;
+    left: 25px;
+    bottom: 75px;
+  }
+  
   .gallery-back-btn {
-    top: 14px;
-    left: 10px;
+    top: 24px;
+    left: 24px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-wrapper {
+    padding: 3.5rem 0 2rem 0;
+  }
+  
+  .gallery-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .gallery-grid {
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+  
+  .gallery-card {
+    min-height: 250px;
+  }
+  
+  .gallery-card-img {
+    height: 250px;
+  }
+  
+  .gallery-card-title {
+    font-size: 1.05rem;
+    left: 15px;
+    bottom: 12px;
+    padding: 0.3rem 0.8rem;
+  }
+  
+  .gallery-card-type {
+    font-size: 0.85rem;
+    top: 10px;
+    left: 15px;
+  }
+  
+  .gallery-card-year {
+    font-size: 0.9rem;
+    right: 12px;
+    bottom: 18px;
+  }
+  
+  .gallery-card-view-btn {
+    left: 20px;
+    bottom: 65px;
+  }
+  
+  .gallery-card-view-btn, .circle-svg, .circle-text {
+    width: 50px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+  
+  .gallery-back-btn {
+    top: 18px;
+    left: 18px;
     width: 38px;
     height: 38px;
   }
