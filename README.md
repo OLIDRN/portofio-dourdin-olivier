@@ -64,7 +64,7 @@ src/
 
 - [Olivier Dourdin](https://www.linkedin.com/in/olivier-dourdin-3a58a6268/)
 - [GitHub](https://github.com/OLIDRN)
-- [Portfolio](https://portofio-dourdin-olivier.vercel.app)
+- [Portfolio](https://dourdin-olivier-portfolio.vercel.app)
 
 ---
 
