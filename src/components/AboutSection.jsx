@@ -60,6 +60,9 @@ const AboutSection = () => {
             <a href="/cv-olivier.pdf" className="about-btn" download>
               Télécharger mon CV
             </a>
+            <a href="/cv-olivier-ats.pdf" className="about-btn" download>
+              Télécharger mon CV ATS
+            </a>
             <a href="mailto:olivierdourdin148@gmail.com" className="about-btn about-btn-outline">
               Me contacter
             </a>

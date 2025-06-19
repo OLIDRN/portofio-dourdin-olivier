@@ -78,6 +78,21 @@ const AboutPage = () => {
                       <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                     </svg>
                   </motion.a>
+
+                  <motion.a
+                    href="/cv-olivier-ats.pdf"
+                    className="about-page__cta about-page__cta--primary"
+                    download
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Télécharger mon CV ATS
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path d="M21 15V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <polyline points="7,10 12,15 17,10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                  </motion.a>
                   
                   <motion.a
                     href="mailto:olivierdourdin148@gmail.com"
